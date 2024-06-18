@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="language.css">
+    <title>LANGUAGE HUB</title>
+    <style>
+        .quiz-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .question {
+            margin: 20px 0;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+<header style="background-color: aquamarine;">
+    <img src="languagehub.png" class="logo" alt="Language Hub Logo">
+    <h1>Welcome to Language Hub</h1>
+</header>
+<nav>
+    <ul class="menu" style="padding: 10px">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="Aboutproject.html">About</a></li>
+        <li class="dropdown">
+            <a href="#"> Languages</a>
+            <ul class="submenu">
+            <li><a href="python.html">Python</a></li>
+            <li><a href="java.html">Java</a></li>
+            <li><a href="C.html">C</a></li>
+            <li><a href="C++.html">C++</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="JV.html">JavaScript</a></li>
+        </li></ul>
+        <li><a href="contactwe.html">Contact US</a></li>
+        
+    </ul>
+</nav>
+<main style="background-color: bisque;">
+    <p class="title"><b>Python Quiz</b></p>
+    <div class="quiz-container">
+        <h1>Multiple Choice Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>Question 1: Who developed Python Programming Language?</p>
+                <input type="radio" name="q1" value="a">a) Wick van Rossum<br>
+                <input type="radio" name="q1" value="b">b) Rasmus Lerdorf<br>
+                <input type="radio" name="q1" value="c">c) Guido van Rossum <br>
+                <input type="radio" name="q1" value="d">d) Niene Stom<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 2: Is Python case sensitive when dealing with identifiers?</p>
+                <input type="radio" name="q2" value="a">a) no<br>
+                <input type="radio" name="q2" value="b">b) yes<br>
+                <input type="radio" name="q2" value="c">c) machine dependent <br>
+                <input type="radio" name="q2" value="d">d) None of the mentioned<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 3: Which type of Programming does Python support?</p>
+                <input type="radio" name="q3" value="a">a) object-oriented programming<br>
+                <input type="radio" name="q3" value="b">b) structured programming<br>
+                <input type="radio" name="q3" value="c">c) functional programming <br>
+                <input type="radio" name="q3" value="d">d) all of the mentioned<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 4: Which of the following is the correct extension of the Python file?</p>
+                <input type="radio" name="q4" value="a">a) .python<br>
+                <input type="radio" name="q4" value="b">b) .pl<br>
+                <input type="radio" name="q4" value="c">c) .py <br>
+                <input type="radio" name="q4" value="d">d) .p<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 5: Is Python code compiled or interpreted?</p>
+                <input type="radio" name="q5" value="a">a) Python code is both compiled and interpreted<br>
+                <input type="radio" name="q5" value="b">b) Python code is neither compiled nor interpreted<br>
+                <input type="radio" name="q5" value="c">c) Python code is only compiled <br>
+                <input type="radio" name="q5" value="d">d) Python code is only interpreted<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 6: All keywords in Python are in _________</p>
+                <input type="radio" name="q6" value="a">a) Capitalized<br>
+                <input type="radio" name="q6" value="b">b) lower case<br>
+                <input type="radio" name="q6" value="c">c) UPPER CASE<br>
+                <input type="radio" name="q6" value="d">d) None of the mentioned<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 7: Which of the following is used to define a block of code in Python language?</p>
+                <input type="radio" name="q7" value="a">a) Indentation<br>
+                <input type="radio" name="q7" value="b">b) Key<br>
+                <input type="radio" name="q7" value="c">c) Brackets<br>
+                <input type="radio" name="q7" value="d">d) All of the mentioned<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 8: Which keyword is used for a function in the Python language?</p>
+                <input type="radio" name="q8" value="a">a) Function<br>
+                <input type="radio" name="q8" value="b">b) def<br>
+                <input type="radio" name="q8" value="c">c) Fun <br>
+                <input type="radio" name="q8" value="d">d) Define<br>
+            </div>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById("quiz-form");
+        const resultsDiv = document.getElementById("results");
+
+        quizForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const correctAnswers = {
+                q1: "c",
+                q2: "b",
+                q3: "d",
+                q4: "c",
+                q5: "d",
+                q6: "b",
+                q7: "a",
+                q8: "b",
+            };
+
+            let score = 0;
+
+            for (let i = 1; i <= Object.keys(correctAnswers).length; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (userAnswer) {
+                    if (userAnswer.value === correctAnswers[`q${i}`]) {
+                        score++;
+                    }
+                }
+            }
+
+            resultsDiv.innerHTML = `You scored ${score} out of ${Object.keys(correctAnswers).length}`;
+        });
+    </script>
+</main>
+<footer>
+    <p>&copy;2023 Language Hub. All Rights Reserved</p>
+</footer>
+</body>
+
+</html>

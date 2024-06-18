@@ -1,0 +1,152 @@
+body, h1, h2, p ,label,input,button{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+}
+header{
+    display:flex;
+    align-items:center;
+    padding:10px;
+    background: color #333;
+    color:rgb(16, 37, 121);
+
+}
+main{
+    padding: 2rem;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+ 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+nav{
+    background-color:#8095c2;
+    padding: 5px;
+}
+.menu{
+    display:flex;
+    list-style:none;
+    padding:10px;
+}
+.menu li{
+    margin-right:20px;
+}
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+.scrollable-text{
+    position : absolute;
+    white-space:nowrap;
+    animation:scrollText 10s lnear;
+    animation-duration: 4s;
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(40, 27, 176);
+    text-align: center;
+    font-size: x-large;
+}
+
+.logo{
+    width:100px;
+    height: 100px;
+}
+.containerr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Adjust the gap between boxes */
+}
+
+.box {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.box a {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.box a:hover {
+    background-color: #ff3300;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.scrollable-text{
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+.blinking-text{
+    margin: .5em;
+    animation: blinkText 1s alternate infinite;
+}
+@keyframes scrollText{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+@keyframes blinkText {
+    0%, 100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    }
+    /* Style for submenu */
+/* Style for submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Change to your preferred color */
+    z-index: 1;
+    list-style: none; /* Remove list-style markers */
+    padding: 5px; /* Adjust the padding as needed */
+    margin: 0; /* Remove margin */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.submenu li {
+    padding: 5px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Display the links as blocks to fill the submenu */
+}
+
+.menu li:hover .submenu {
+    display: block;
+}

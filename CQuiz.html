@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="language.css">
+    <title>LANGUAGE HUB</title>
+    <style>
+        .quiz-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .question {
+            margin: 20px 0;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #score {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header style="background-color: aquamarine;">
+    <img src="languagehub.png" class="logo" alt="Language Hub Logo">
+    <h1>Welcome to Language Hub</h1>
+</header>
+<nav>
+    <ul class="menu" style="padding: 10px">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="Aboutproject.html">About</a></li>
+        <li class="dropdown">
+            <a href="#"> Languages</a>
+            <ul class="submenu">
+            <li><a href="python.html">Python</a></li>
+            <li><a href="java.html">Java</a></li>
+            <li><a href="C.html">C</a></li>
+            <li><a href="C++.html">C++</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="JV.html">JavaScript</a></li>
+        </li></ul>
+        <li><a href="contactwe.html">Contact US</a></li>
+        
+    </ul>
+</nav>
+<main style="background-color: bisque;">
+    <p class="title"><b>C Quiz</b></p>
+    <div class="quiz-container">
+        <h1>Multiple Choice Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>Question 1: Who is the father of C language? </p>
+                <input type="radio" name="q1" value="a">a) Steve Jobs <br>
+                <input type="radio" name="q1" value="b">b) James Gosling <br>
+                <input type="radio" name="q1" value="c">c) Dennis Ritchie <br>
+                <input type="radio" name="q1" value="d">d) Rasmus Lerdorf <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 2: Which of the following is not a valid C variable name? </p>
+                <input type="radio" name="q2" value="a">a) int number; <br>
+                <input type="radio" name="q2" value="b">b) float rate; <br>
+                <input type="radio" name="q2" value="c">c) int variable_count; <br>
+                <input type="radio" name="q2" value="d">d) int $main; <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 3: All keywords in C are in ____ </p>
+                <input type="radio" name="q3" value="a">a) LowerCase letters <br>
+                <input type="radio" name="q3" value="b">b) UpperCase letters <br>
+                <input type="radio" name="q3" value="c">c) CamelCase letters <br>
+                <input type="radio" name="q3" value="d">d) None of the mentioned <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 4: Which of the following is true for variable names in C?</p>
+                <input type="radio" name="q4" value="a">a) They can contain alphanumeric characters as well as special characters <br>
+                <input type="radio" name="q4" value="b">b) It is not an error to declare a variable to be one of the keywords (like goto, static) <br>
+                <input type="radio" name="q4" value="c">c) Variable names cannot start with a digit <br>
+                <input type="radio" name="q4" value="d">d) Variable can be of any length <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 5: Which is a valid C expression? </p>
+                <input type="radio" name="q5" value="a">a) int my_num = 100,000; <br>
+                <input type="radio" name="q5" value="b">b) int my_num = 100000; <br>
+                <input type="radio" name="q5" value="c">c) int my_num = 1000; <br>
+                <input type="radio" name="q5" value="d">d) int $my_num = 10000; <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 6: Which of the following cannot be a variable name in C? </p>
+                <input type="radio" name="q6" value="a">a) volatile <br>
+                <input type="radio" name="q6" value="b">b) true <br>
+                <input type="radio" name="q6" value="c">c) friend <br>
+                <input type="radio" name="q6" value="d">d) export <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 7: What is short int in C programming?</p>
+                <input type="radio" name="q7" value="a">a) The basic data type of C <br>
+                <input type="radio" name="q7" value="b">b) Qualifier <br>
+                <input type="radio" name="q7" value="c">c) Short is the qualifier and int is the basic data type <br>
+                <input type="radio" name="q7" value="d">d) All of the mentioned <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 8: Which keyword is used to prevent any changes in the variable within a C program?</p>
+                <input type="radio" name="q8" value="a">a) immutable <br>
+                <input type="radio" name="q8" value="b">b) mutable <br>
+                <input type="radio" name="q8" value="c">c) const  <br>
+                <input type="radio" name="q8" value="d">d) volatile <br>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="results"></div>
+        <div id="score"></div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById("quiz-form");
+        const resultsDiv = document.getElementById("results");
+        const scoreDiv = document.getElementById("score");
+
+        quizForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const correctAnswers = {
+                q1: "c",
+                q2: "d",
+                q3: "a",
+                q4: "c",
+                q5: "b",
+                q6: "a",
+                q7: "c",
+                q8: "c",
+            };
+
+            let score = 0;
+
+            for (let i = 1; i <= Object.keys(correctAnswers).length; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (userAnswer) {
+                    if (userAnswer.value === correctAnswers[`q${i}`]) {
+                        score++;
+                    }
+                }
+            }
+
+            resultsDiv.innerHTML = `You scored ${score} out of ${Object.keys(correctAnswers).length}`;
+            scoreDiv.innerHTML = `Your Score: ${score}`;
+        });
+    </script>
+</main>
+<footer>
+    <p>&copy;2023 Language Hub. All Rights Reserved</p>
+</footer>
+</body>
+</html>

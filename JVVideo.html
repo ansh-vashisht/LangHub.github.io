@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="language.css">
+    <title>LANGUAGE HUB</title>
+    <style>
+        .video-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .text-container {
+            flex: 1;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* New styles for layout */
+        .video-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .video-column {
+            flex: 1;
+            margin: 10px;
+            width: 320px; /* Adjust width */
+        }
+    </style>
+</head>
+<body>
+<header style="background-color: aquamarine;">
+    <img src="languagehub.png" class="logo" alt="Language Hub Logo">
+    <h1>Welcome to Language Hub</h1>
+</header>
+<nav>
+    <ul class="menu" style="padding: 10px">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="Aboutproject.html">About</a></li>
+        <li class="dropdown">
+            <a href="#"> Languages</a>
+            <ul class="submenu">
+            <li><a href="python.html">Python</a></li>
+            <li><a href="java.html">Java</a></li>
+            <li><a href="C.html">C</a></li>
+            <li><a href="C++.html">C++</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="JV.html">JavaScript</a></li>
+        </li></ul>
+        <li><a href="contactwe.html">Contact US</a></li>
+        
+    </ul>
+</nav>
+<main style="background-color: rgb(81, 173, 253);">
+    <p class="title"><b>JAVAScript Quiz</b></p>
+    <!-- First row of videos -->
+    <div class="video-row">
+        <div class="video-column">
+            <div class="video-container">
+                <video controls>
+                    <source src="Jv1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-container">
+                <h1>Introduction</h1>
+                <p>JavaScript- A new way of making Websites</p>
+            </div>
+        </div>
+        <div class="video-column">
+            <div class="video-container">
+                <video controls>
+                    <source src="Jv2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-container">
+                <h1>Let's Start</h1>
+                <p>Let's Dive into JavaScript</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second row of videos -->
+    <div class="video-row">
+        <div class="video-column">
+            <div class="video-container">
+                <video controls>
+                    <source src="Jv3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-container">
+                <h1>Node.js</h1>
+                <p>How to use Node.js</p>
+            </div>
+        </div>
+        <div class="video-column">
+            <div class="video-container">
+                <video controls>
+                    <source src="Jv4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-container">
+                <h1>Sample Program</h1>
+                <p>Program using JavaScript</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&copy;2023 Language Hub. All Rights Reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="language.css">
+    <title>LANGUAGE HUB</title>
+    <style>
+        .quiz-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .question {
+            margin: 20px 0;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #score {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header style="background-color: aquamarine;">
+    <img src="languagehub.png" class="logo" alt="Language Hub Logo">
+    <h1>Welcome to Language Hub</h1>
+</header>
+<nav>
+    <ul class="menu" style="padding: 10px">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="Aboutproject.html">About</a></li>
+        <li class="dropdown">
+            <a href="#"> Languages</a>
+            <ul class="submenu">
+            <li><a href="python.html">Python</a></li>
+            <li><a href="java.html">Java</a></li>
+            <li><a href="C.html">C</a></li>
+            <li><a href="C++.html">C++</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="JV.html">JavaScript</a></li>
+        </li></ul>
+        <li><a href="contactwe.html">Contact US</a></li>
+        
+    </ul>
+</nav>
+<main style="background-color: bisque;">
+    <p class="title"><b>JavaScript Quiz</b></p>
+    <div class="quiz-container">
+        <h1>Multiple Choice Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>Question 1: What is JavaScript?</p>
+                <input type="radio" name="q1" value="a">a) JavaScript is a scripting language used to make the website interactive <br>
+                <input type="radio" name="q1" value="b">b) JavaScript is an assembly language used to make the website interactive <br>
+                <input type="radio" name="q1" value="c">c) JavaScript is a compiled language used to make the website interactive <br>
+                <input type="radio" name="q1" value="d">d) None of the mentioned <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 2: Which of the following is correct about JavaScript? </p>
+                <input type="radio" name="q2" value="a">a) JavaScript is an Object-Based language <br>
+                <input type="radio" name="q2" value="b">b) JavaScript is Assembly-language<br>
+                <input type="radio" name="q2" value="c">c) JavaScript is an Object-Oriented language <br>
+                <input type="radio" name="q2" value="d">d) JavaScript is a High-level language <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 3:Among the given statements, which statement defines closures in JavaScript?</p>
+                <input type="radio" name="q3" value="a">a) JavaScript is a function that is enclosed with references to its inner function scope <br>
+                <input type="radio" name="q3" value="b">b) JavaScript is a function that is enclosed with references to its lexical environment<br>
+                <input type="radio" name="q3" value="c">c) JavaScript is a function that is enclosed with the object to its inner function scope <br>
+                <input type="radio" name="q3" value="d">d) None of the mentioned <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 4: Arrays in JavaScript are defined by which of the following statements?</p>
+                <input type="radio" name="q4" value="a">a) It is an ordered list of values <br>
+                <input type="radio" name="q4" value="b">b) It is an ordered list of objects <br>
+                <input type="radio" name="q4" value="c">c) It is an ordered list of string <br>
+                <input type="radio" name="q4" value="d">d) It is an ordered list of functions <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 5: Which of the following is not javascript data types? </p>
+                <input type="radio" name="q5" value="a">a) Null type <br>
+                <input type="radio" name="q5" value="b">b) Undefined type <br>
+                <input type="radio" name="q5" value="c">c) Number type<br>
+                <input type="radio" name="q5" value="d">d) All of the mentioned <br>
+            </div>
+            
+            <div class="question">
+                <p>Question 6:Where is Client-side JavaScript code is embedded within HTML documents?</p>
+                <input type="radio" name="q6" value="a">a) A URL that uses the special javascript:code<br>
+                <input type="radio" name="q6" value="b">b) A URL that uses the special javascript:protocol<br>
+                <input type="radio" name="q6" value="c">c) A URL that uses the special javascript:encoding<br>
+                <input type="radio" name="q6" value="d">d) A URL that uses the special javascript:stack<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 7: Which of the following object is the main entry point to all client-side JavaScript features and APIs?</p>
+                <input type="radio" name="q7" value="a">a) Position <br>
+                <input type="radio" name="q7" value="b">b) Window <br>
+                <input type="radio" name="q7" value="c">c) Standard<br>
+                <input type="radio" name="q7" value="d">d) Location<br>
+            </div>
+            
+            <div class="question">
+                <p>Question 8: Which of the following can be used to call a JavaScript Code Snippet?</p>
+                <input type="radio" name="q8" value="a">a) Function/Method <br>
+                <input type="radio" name="q8" value="b">b) Preprocessor<br>
+                <input type="radio" name="q8" value="c">c) Triggering Event <br>
+                <input type="radio" name="q8" value="d">d) RMI<br>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="results"></div>
+        <div id="score"></div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById("quiz-form");
+        const resultsDiv = document.getElementById("results");
+        const scoreDiv = document.getElementById("score");
+
+        quizForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const correctAnswers = {
+                q1: "a",
+                q2: "a",
+                q3: "b",
+                q4: "a",
+                q5: "d",
+                q6: "b",
+                q7: "b",
+                q8: "a",
+            };
+
+            let score = 0;
+
+            for (let i = 1; i <= Object.keys(correctAnswers).length; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (userAnswer) {
+                    if (userAnswer.value === correctAnswers[`q${i}`]) {
+                        score++;
+                    }
+                }
+            }
+
+            resultsDiv.innerHTML = `You scored ${score} out of ${Object.keys(correctAnswers).length}`;
+            scoreDiv.innerHTML = `Your Score: ${score}`;
+        });
+    </script>
+</main>
+<footer>
+    <p>&copy;2023 Language Hub. All Rights Reserved</p>
+</footer>
+</body>
+</html>
